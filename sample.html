@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+			<meta name="description" content="a genesis theme">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="icon" href="image\logo.png" type="image/icon type">
+			<link rel="stylesheet" href="sample.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<title>HUGE-FITNESS</title></title>
+	</head>
+	<body>
+		<nav>
+			<ul class="menu">
+				<li><a href="#" class="active">HOME</li></a>
+				<li><a href="#">ABOUT</li></a>
+				<li><a href="#">VIDEO SESSION</li></a>
+				<li><a href="#">DIFFICULTY</li></a>
+			</ul>
+		</nav>	
+
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">DIFFICULTY</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#home">Beginner</a>
+				<a href="#about">Meduim</a>
+				<a href="#contact">Hard</a>
+			</div>
+		</div>
+		<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+				if (!event.target.matches('.dropbtn')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+		</script>
+	</body>
+</html>

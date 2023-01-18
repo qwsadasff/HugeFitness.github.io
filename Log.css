@@ -1,0 +1,357 @@
+*,*::before, *::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url('image/vack.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding-inline: 100px;
+	font-family: 'Poppins', sans-serif;
+}
+header{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	border-radius: 10px;
+	position: relative;
+}
+.logo{
+	font-family: Rockwell;
+}
+.logo, nav ul li a, label{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 800;
+}
+#menu{
+	display: none;
+}
+label{
+	display: none;
+}
+
+nav ul{
+	display: flex;
+	gap: 4rem;
+}
+
+nav ul li{
+	list-style-type: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-size: 20px;
+}
+nav ul li a:hover{
+	color: red;
+}
+nav #active{
+	color: red;
+	font-size: 25px;
+}
+
+
+/* Style the icon */
+.icon::before {
+  content: "\f015"; /* Icon for the home */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.icon-two::before {
+  content: "\f2bb";/* Icon for the about*/
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  display: inline-block; 
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.icon-three::before {
+  content: "\f03d";/* Icon for the video session */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.icon-four::before {
+  content: "\f2bb"; /* Icon for the Difficulty */
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.icon-five::before {
+	content: "\f007"; /* Icon for the Log in */
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+  }
+@media screen and (max-width: 620px) {
+	body{
+		background-size: cover;
+		background-position: r;
+	}
+	label{
+		display: block;
+	}
+
+	nav{
+		width: 50%;
+		position: absolute;
+		background: #fff;
+		top: 0;
+		left: 300px;
+		border-radius: 5px;
+		visibility: hidden;
+		opacity: 0;
+		transition: .3s ease;
+		padding-bottom: 5%;
+		height: auto;	
+	}
+	.logo{
+		margin-left: -50px;
+	}
+
+	nav ul li a, nav label{
+		color: #111;
+	}
+
+	nav label{
+		text-align: right;
+	}
+	nav ul{
+		flex-direction: column;
+		line-height: 2px;
+	}
+
+	input:checked ~ nav{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+form {
+	width: 500px;
+	margin: 50px auto;
+	padding: 50px;
+	border-radius: 10px;
+  
+}
+form h2 {
+	font-size: 30px;
+	color: white;
+	font-weight: 700;
+	font-family: Rockwell;
+	margin-bottom: 10%;
+}
+form .sign {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-weight: 600;
+	font-family: 'Poppins', san-serif;
+	float: right;
+}
+form .sign:hover {
+
+	color: red;
+}
+
+
+main label{
+	font-size: 25px;
+	margin-bottom: 10px;
+	color: #000;
+	display: block;
+	font-family: 'Poppins', san-serif;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: none;
+	background-color: #f1f1f1;
+	font-size: 18px;
+	outline: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: red;
+}
+
+
+
+
+
+
+/* styling footer line */
+footer {
+	background-color: rgb(230, 222, 222);
+	padding: 50px;
+	width: 118%;
+	margin-left: -8%;
+}
+.container{
+	max-width: 90%; /* padding box size  */
+	margin: auto;
+}
+.row{
+	display: flex; /* for horizontally line  */
+	flex-wrap: wrap;
+}
+.footer-col{
+	width:  25%;
+}
+.footer-col p{
+	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Poppins', sans-serif;
+	padding-right: 30px;
+}
+/* footer content title */
+.footer-col h4{
+	font-size: 20px;
+	color: #000;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+}
+/* line under h4 */
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: black;
+	height: 2px;
+	box-sizing: border-box;
+	width: 80px;
+}
+.footer-col ul li{
+	list-style: none;
+}
+/* bottom space for ul li */
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #000;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li:hover{
+	color: red;
+	padding-left: 8px; 
+}
+/* for icons */
+.footer-col .social-links a{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	font-size: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 20px 0px 10px 0;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 50%;
+	color: #333;
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+.footer-col .social-links a:hover{
+	color: red;
+	background-color: black;
+}
+.copyright{
+	position: relative;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Poppins', sans-serif;
+	padding-left: 40%;
+	font-size: 20px;
+}
+@media (max-width: 620px){
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.copyright{
+		padding-left: 20%;
+	}
+}
+/* input box, email and subscribe */
+footer form {
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+}
+	/* for email input box*/
+footer form input[type="email"] {
+	padding: 12px;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	margin-right: 10px;
+	flex-grow: 1;
+	outline: none;
+}
+  /* sor sumbit btn */
+footer form button[type="submit"] {
+	padding: 12px;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+footer form button:hover{
+	background-color: red;
+}
+/* responsive form */
+@media (max-width: 620px){
+	footer form{
+		width: 100%;
+		margin-bottom: 10px;
+			
+	}
+}
